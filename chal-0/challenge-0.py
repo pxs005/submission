@@ -61,8 +61,9 @@ print(r.text) #Print the PATCH request's reponse
 
 
 #Make GET Request to see the tag's new changes
-#r = requests.get(url = GET_PATCH_API_URL) 
-#print(r.text)
+r = requests.get(url = GET_PATCH_API_URL) 
+print("This is the GET request with the updated contents value")
+print(r.text)
 
 
 
