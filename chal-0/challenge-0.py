@@ -26,6 +26,7 @@ POST_API_URL = API_ENDPOINT + "/tags/" + name
 r = requests.post(url=POST_API_URL, data =data) 
 
 #Print the POST request's response 
+print("This is the POST request")
 print(r.text)
 
 
@@ -39,6 +40,7 @@ token = extracted_data["token"]
 GET_PATCH_API_URL = API_ENDPOINT + "/tags/" + f"{name}/"+ token
 r = requests.get(url = GET_PATCH_API_URL) 
 #Print the GET request's response 
+print("This is the GET request")
 print(r.text)
 
 
@@ -52,14 +54,15 @@ new_data ={
 
 
 r = requests.patch(url = GET_PATCH_API_URL, data = new_data)
+print("This is the PATCH request")
 print(r.text) #Print the PATCH request's reponse
 
 
 
 
 #Make GET Request to see the tag's new changes
-r = requests.get(url = GET_PATCH_API_URL) 
-print(r.text)
+#r = requests.get(url = GET_PATCH_API_URL) 
+#print(r.text)
 
 
 
@@ -67,5 +70,6 @@ print(r.text)
 r = requests.delete(url = GET_PATCH_API_URL) 
 
 #Print status code
-print(r)
+print("This is the DELETE request")
+print(r.status_code)
 
