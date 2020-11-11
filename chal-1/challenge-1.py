@@ -87,7 +87,7 @@ def updateTag(name, token):
 		 
 		return ("The specified key's content has been successfully modified.",200)
 	else:
-		return ("Error. Value cannot be found.",400)
+		return ("Error. Value cannot be found.",404)
 
 
 
