@@ -1,5 +1,8 @@
 # submission
 
+- I decided I am only interested in joining the new projects team.
+
+
 #Note for challenge 1
 Windows:
 Start two command prompts. In command prompt #1, move to the directory holding the challenge-1.py. In the terminal, sequentially run "set FLASK_APP=challenge-1.py" and "flask run". Use the server's url for the different requests.
