@@ -49,7 +49,7 @@ def getTestMap():
 
 #########
 
-#GET Request for specific tag
+#GET Request for retrieving specific tag
 @app.route("/tags/<string:name>/<string:token>", methods=['GET'])
 def getTag(name, token):
 	#Construct ID based on passed arguments
@@ -85,9 +85,9 @@ def updateTag(name, token):
 		tagMap[id].update(resTag)
 
 		 
-		return ("The specified key's content has been successfully modified.",200)
+		return (jsonify(resTag),200)
 	else:
-		return ("Error. Value cannot be found.",404)
+		return ("Error. Value cannot be found.",400)
 
 
 
@@ -101,9 +101,10 @@ def deleteTag(name, token):
 
 
 		tagMap.pop(id) 
-		return ("Key and value deleted.",200)
+		return ("200 OK",200)
 	else:
 		return ("Error. Key cannot be found.",404)
+
 
 
 
