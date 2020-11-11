@@ -89,7 +89,7 @@ def updateTag(name, token):
 		 
 		return (jsonify(resTag),200)
 	else:
-		return ("Error. Value cannot be found.",400)
+		return ("Error. Key cannot be found.",404)
 
 
 
