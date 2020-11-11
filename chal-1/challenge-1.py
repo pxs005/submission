@@ -3,6 +3,8 @@ from flask import Flask, jsonify, request
 from uuid import uuid4
 
 app = Flask(__name__)
+app.config['JSON_SORT_KEYS'] = False
+
 
 #Empty 2D dictionary to hold the tags
 tagMap = dict()
