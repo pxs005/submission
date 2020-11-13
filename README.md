@@ -20,6 +20,6 @@ Debugging purpose (used to display the dictionary of tags):
 
 
 Example:
-- curl -X POST  http://127.0.0.1:5000/tags/linux -d “{ \\"name\\": \\"linux\\", \\"contents\\": \\"Hello\\" }”
+- curl -X POST  http://157.0.0.3:8000/tags/linux -d “{ \\"name\\": \\"linux\\", \\"contents\\": \\"Hello\\" }”
 
 
